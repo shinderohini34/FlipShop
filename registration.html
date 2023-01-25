@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/registration.css">
+</head>
+<body>
+    <div id="nav"></div>
+    <div class="container">
+        <form id="registration_form">
+            <h3 style="text-align: center">Register</h3>
+            <div>
+                <label>Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                <p id="nameVal" style="color: red"></p>
+            </div>
+            <div>
+              <label>Email address</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              <p id="emailVal" style="color: red"></p>
+            </div>
+            <div>
+              <label>Password</label>
+              <input type="password" class="form-control" id="password">
+              <p id="passwordVal" style="color: red"></p>
+            </div>
+            <div>
+                <label for="exampleInputPassword1">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm_password">
+                <p id="confirm_passVal" style="color: red"></p>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <div>
+                <input type="submit" class="form-control btn-primary" id="exampleInputPassword1" value="Submit">
+            </div><br>
+            <div id="registration">
+                <p>Already Registered?</p><a href="login.html">Login</a>
+            </div>
+          </form>
+    </div>
+</body>
+<script type="module" src="./script/registration.js"></script>
+</html>

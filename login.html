@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/login.css">
+</head>
+<body>
+    <div id="nav"></div>
+    <div class="container">
+        <form id="login_form">
+            <h3 style="text-align: center";>Login</h3>
+            <div>
+              <label>Email address</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              <p id="emailVal" style="color: red"></p>
+            </div>
+            <div>
+              <label>Password</label>
+              <input type="password" class="form-control" id="password">
+              <p id="passwordVal" style="color: red"></p>
+            </div>
+            <div class="form-group form-check">
+               <input type="checkbox" class="form-check-input" id="exampleCheck1">
+               <label class="form-check-label" for="exampleCheck1">Remember me?</label>
+            </div>
+            <div>
+                <input type="submit" class="form-control btn-primary" id="submit_button" value="Login">
+            </div><br>
+            <div id="login">
+                <p>Don't have an account?</p><a href="registration.html">Register</a>
+            </div>
+        </form>
+
+    </div>
+
+    
+</body>
+<script type="module" src="./script/login.js"></script>
+</html>
